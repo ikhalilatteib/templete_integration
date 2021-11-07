@@ -324,10 +324,10 @@
                             <div class="account-wrap">
                                 <div class="account-item clearfix js-item-menu">
                                     <div class="image">
-                                        <img src="assets/images/icon/avatar-01.jpg" alt="John Doe"/>
+                                        <img src="{{asset('assets/images/icon/avatar-01.jpg')}}" alt="John Doe"/>
                                     </div>
                                     <div class="content">
-                                        <a class="js-acc-btn" href="#">john doe</a>
+                                        <a class="js-acc-btn" href="#">@guest  john Doe @else  {{Auth::user()->name}}  @endguest</a>
                                     </div>
                                     <div class="account-dropdown js-dropdown">
                                         <div class="info clearfix">
